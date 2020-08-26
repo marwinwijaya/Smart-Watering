@@ -1,0 +1,1841 @@
+[
+    {
+        "id": "5cdc6e62.a5eaa",
+        "type": "tab",
+        "label": "Monitoring",
+        "disabled": false,
+        "info": "Konfigurasi Tab Monitoring \nSilahkan cek komentar"
+    },
+    {
+        "id": "6883f729.e60368",
+        "type": "tab",
+        "label": "Controlling",
+        "disabled": false,
+        "info": "Konfigurasi Tab Controlling\nSilahkan cek komentar"
+    },
+    {
+        "id": "30c53df9.3d1442",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home Monitoring",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "943f9b1b.2021c8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temperature",
+        "tab": "30c53df9.3d1442",
+        "order": 2,
+        "disp": true,
+        "width": "7",
+        "collapse": false
+    },
+    {
+        "id": "e0d34c09.819b3",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Smart Watering",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Smart Watering",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "a880ee2c.494dc",
+        "type": "ui_group",
+        "z": "",
+        "name": "Soil Moisture",
+        "tab": "30c53df9.3d1442",
+        "order": 3,
+        "disp": true,
+        "width": "7",
+        "collapse": false
+    },
+    {
+        "id": "8a5e5f45.6ecef",
+        "type": "ui_group",
+        "z": "",
+        "name": "Penyiraman",
+        "tab": "fd2227c2.d8e998",
+        "order": 1,
+        "disp": true,
+        "width": "7",
+        "collapse": false
+    },
+    {
+        "id": "cdd28492.d34c78",
+        "type": "ui_group",
+        "z": "",
+        "name": "Fuzzy Logic",
+        "tab": "30c53df9.3d1442",
+        "order": 4,
+        "disp": true,
+        "width": "7",
+        "collapse": false
+    },
+    {
+        "id": "fd2227c2.d8e998",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home Controlling",
+        "icon": "build",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "af3f6d3a.c840a",
+        "type": "MySQLdatabase",
+        "z": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "smartwatering",
+        "tz": "GMT + 8"
+    },
+    {
+        "id": "8b8cbdf4.adf92",
+        "type": "firebase config",
+        "z": "",
+        "firebaseurl": "databaseiot-42827",
+        "loginType": "jwt"
+    },
+    {
+        "id": "5aba5f6b.013e1",
+        "type": "ui_group",
+        "z": "",
+        "name": "Status Pompa",
+        "tab": "fd2227c2.d8e998",
+        "order": 2,
+        "disp": true,
+        "width": "7",
+        "collapse": false
+    },
+    {
+        "id": "2f39b818.2a2d78",
+        "type": "ui_group",
+        "z": "",
+        "name": "Status Fuzzy",
+        "tab": "fd2227c2.d8e998",
+        "order": 3,
+        "disp": true,
+        "width": "7",
+        "collapse": false
+    },
+    {
+        "id": "98805563.af0c68",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "8c933801.f75f18",
+        "type": "join",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Join",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 310,
+        "y": 920,
+        "wires": [
+            [
+                "790aa3ff.fdd08c"
+            ]
+        ]
+    },
+    {
+        "id": "81d42a1e.3ce118",
+        "type": "ui_text",
+        "z": "5cdc6e62.a5eaa",
+        "group": "943f9b1b.2021c8",
+        "order": 2,
+        "width": "7",
+        "height": "2",
+        "name": "Suhu",
+        "label": "Suhu : ",
+        "format": "{{msg.payload}} 'C",
+        "layout": "row-center",
+        "x": 350,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "adc208c.838a0f8",
+        "type": "ui_text",
+        "z": "5cdc6e62.a5eaa",
+        "group": "a880ee2c.494dc",
+        "order": 3,
+        "width": "7",
+        "height": "2",
+        "name": "Kelembapan Tanah",
+        "label": "Kelembapan Tanah : ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "x": 390,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "790aa3ff.fdd08c",
+        "type": "json",
+        "z": "5cdc6e62.a5eaa",
+        "name": "JSON",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 450,
+        "y": 920,
+        "wires": [
+            [
+                "e2d26d36.f88f4"
+            ]
+        ]
+    },
+    {
+        "id": "a70645b4.a8e6c8",
+        "type": "firebase modify",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Firebase",
+        "firebaseconfig": "8b8cbdf4.adf92",
+        "childpath": "NodePemantauan1",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 700,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3281088e.5b8188",
+        "type": "ui_switch",
+        "z": "6883f729.e60368",
+        "name": "",
+        "label": "Manual",
+        "tooltip": "",
+        "group": "8a5e5f45.6ecef",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 280,
+        "y": 80,
+        "wires": [
+            [
+                "8f3aa631.60d558"
+            ]
+        ]
+    },
+    {
+        "id": "8f3aa631.60d558",
+        "type": "switch",
+        "z": "6883f729.e60368",
+        "name": "Mode",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 450,
+        "y": 80,
+        "wires": [
+            [
+                "efc18381.e2dc7",
+                "4327c555.4b230c"
+            ],
+            [
+                "7371cfc7.e5e4",
+                "699b5ef1.74237"
+            ]
+        ]
+    },
+    {
+        "id": "efc18381.e2dc7",
+        "type": "function",
+        "z": "6883f729.e60368",
+        "name": "On Pompa",
+        "func": "\nreturn {enabled:true};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 630,
+        "y": 60,
+        "wires": [
+            [
+                "d89679d2.57a558"
+            ]
+        ]
+    },
+    {
+        "id": "7371cfc7.e5e4",
+        "type": "function",
+        "z": "6883f729.e60368",
+        "name": "Off Pompa",
+        "func": "\nreturn {enabled:false, payload:true};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 630,
+        "y": 100,
+        "wires": [
+            [
+                "d89679d2.57a558"
+            ]
+        ]
+    },
+    {
+        "id": "26235226.57755e",
+        "type": "inject",
+        "z": "6883f729.e60368",
+        "name": "On Switch",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "3281088e.5b8188"
+            ]
+        ]
+    },
+    {
+        "id": "deff61f5.251a3",
+        "type": "mqtt in",
+        "z": "5cdc6e62.a5eaa",
+        "name": "DHT Input",
+        "topic": "s1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "98805563.af0c68",
+        "x": 160,
+        "y": 460,
+        "wires": [
+            [
+                "81d42a1e.3ce118",
+                "e4f1c8d9.4452c8",
+                "9692c449.b81cd8"
+            ]
+        ]
+    },
+    {
+        "id": "bc58db06.53b198",
+        "type": "mqtt in",
+        "z": "5cdc6e62.a5eaa",
+        "name": "SoilMoisture Input",
+        "topic": "kt1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "98805563.af0c68",
+        "x": 130,
+        "y": 600,
+        "wires": [
+            [
+                "adc208c.838a0f8",
+                "50453b88.587e24",
+                "8d625fa8.139ab"
+            ]
+        ]
+    },
+    {
+        "id": "33cc2cb8.78f294",
+        "type": "mqtt out",
+        "z": "6883f729.e60368",
+        "name": "Pompa Manual",
+        "topic": "control",
+        "qos": "2",
+        "retain": "true",
+        "broker": "98805563.af0c68",
+        "x": 260,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d89679d2.57a558",
+        "type": "ui_switch",
+        "z": "6883f729.e60368",
+        "name": "Pompa",
+        "label": "Pompa",
+        "tooltip": "",
+        "group": "8a5e5f45.6ecef",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "control",
+        "style": "",
+        "onvalue": "false",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "true",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 820,
+        "y": 80,
+        "wires": [
+            [
+                "292ee787.0ac788"
+            ]
+        ]
+    },
+    {
+        "id": "be9e305.d782dd",
+        "type": "ui_gauge",
+        "z": "6883f729.e60368",
+        "name": "Gauge Pompa",
+        "group": "5aba5f6b.013e1",
+        "order": 3,
+        "width": "7",
+        "height": "6",
+        "gtype": "wave",
+        "title": "",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 480,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "f5d12449.431da8",
+        "type": "function",
+        "z": "6883f729.e60368",
+        "name": "Status Pompa",
+        "func": "var obj = msg.payload;\nvar stat = \"Mati\";\n\nif(obj == 100){\n    stat = \"Hidup\";\n} else {\n    stat = \"Mati\";\n}\nreturn {payload : stat, topic : \"Pompa\"};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 260,
+        "y": 440,
+        "wires": [
+            [
+                "2426b417.82981c",
+                "d83f32f9.cca8f"
+            ]
+        ]
+    },
+    {
+        "id": "2426b417.82981c",
+        "type": "ui_text",
+        "z": "6883f729.e60368",
+        "group": "5aba5f6b.013e1",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Status Pompa",
+        "label": "Status : ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "x": 480,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "b66f25a2.735248",
+        "type": "mqtt in",
+        "z": "6883f729.e60368",
+        "name": "Status Pompa",
+        "topic": "statusPompa",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "98805563.af0c68",
+        "x": 90,
+        "y": 380,
+        "wires": [
+            [
+                "f5d12449.431da8",
+                "b9fd681e.5c8448",
+                "4111f240.7be2bc"
+            ]
+        ]
+    },
+    {
+        "id": "b9fd681e.5c8448",
+        "type": "function",
+        "z": "6883f729.e60368",
+        "name": "Nilai Pompa",
+        "func": "var obj = msg.payload;\nvar stat = 0;\n\nif(obj == 100){\n    stat = 100;\n} else {\n    stat = 0;\n}\nreturn {payload : stat};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 270,
+        "y": 320,
+        "wires": [
+            [
+                "be9e305.d782dd"
+            ]
+        ]
+    },
+    {
+        "id": "237817bc.a4c9a8",
+        "type": "join",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Join",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "4",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 370,
+        "y": 780,
+        "wires": [
+            [
+                "ad933950.5a72a8"
+            ]
+        ]
+    },
+    {
+        "id": "ad933950.5a72a8",
+        "type": "json",
+        "z": "5cdc6e62.a5eaa",
+        "name": "JSON",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 530,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6f13f6.24340c",
+        "type": "inject",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Waktu Sekarang",
+        "topic": "timestamp",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "x": 130,
+        "y": 860,
+        "wires": [
+            [
+                "bae158a5.cc4888"
+            ]
+        ]
+    },
+    {
+        "id": "bae158a5.cc4888",
+        "type": "change",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Date Time Format",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$now()",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 860,
+        "wires": [
+            [
+                "237817bc.a4c9a8"
+            ]
+        ]
+    },
+    {
+        "id": "5addd875.5e4ab8",
+        "type": "firebase modify",
+        "z": "6883f729.e60368",
+        "name": "Firebase",
+        "firebaseconfig": "8b8cbdf4.adf92",
+        "childpath": "NodePengontrolan1",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 660,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d83f32f9.cca8f",
+        "type": "join",
+        "z": "6883f729.e60368",
+        "name": "Join",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 290,
+        "y": 500,
+        "wires": [
+            [
+                "373e61d8.54a68e"
+            ]
+        ]
+    },
+    {
+        "id": "94c61f27.d330b",
+        "type": "inject",
+        "z": "6883f729.e60368",
+        "name": "Timestamp",
+        "topic": "timestamp",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "x": 90,
+        "y": 560,
+        "wires": [
+            [
+                "2ee666c5.0ff41a"
+            ]
+        ]
+    },
+    {
+        "id": "2ee666c5.0ff41a",
+        "type": "change",
+        "z": "6883f729.e60368",
+        "name": "Time Format",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$now()",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 270,
+        "y": 560,
+        "wires": [
+            [
+                "d83f32f9.cca8f"
+            ]
+        ]
+    },
+    {
+        "id": "373e61d8.54a68e",
+        "type": "json",
+        "z": "6883f729.e60368",
+        "name": "JSON",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 510,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d39d1935.0a6078",
+        "type": "link out",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Nilai Fuzzy",
+        "links": [
+            "34bed5d6.2b166a",
+            "fb10ca6d.27f018",
+            "ca5d017e.dc61"
+        ],
+        "x": 735,
+        "y": 920,
+        "wires": [],
+        "inputLabels": [
+            "Nilai"
+        ]
+    },
+    {
+        "id": "fb28cd60.7b697",
+        "type": "ui_text",
+        "z": "5cdc6e62.a5eaa",
+        "group": "cdd28492.d34c78",
+        "order": 3,
+        "width": "7",
+        "height": "3",
+        "name": "Fuzzy Logic",
+        "label": "Fuzzy Score : ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "x": 370,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "84cc994f.7dd3f8",
+        "type": "switch",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Fuzzy Action",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "btwn",
+                "v": "0",
+                "vt": "num",
+                "v2": "0.1664",
+                "v2t": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "0.1665",
+                "vt": "num",
+                "v2": "0.4999",
+                "v2t": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "0.5",
+                "vt": "num",
+                "v2": "0.8334",
+                "v2t": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "0.8335",
+                "vt": "num",
+                "v2": "1",
+                "v2t": "num"
+            },
+            {
+                "t": "eq",
+                "v": "undefined",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 710,
+        "y": 340,
+        "wires": [
+            [],
+            [
+                "35037422.e470dc"
+            ],
+            [
+                "ba50c16a.89dbf"
+            ],
+            [
+                "9d2c53ad.1f7ce"
+            ],
+            []
+        ],
+        "outputLabels": [
+            "Tidak Siram",
+            "Siram Sedikit",
+            "Siram Normal",
+            "Siram Lama",
+            "Undefined"
+        ]
+    },
+    {
+        "id": "c82cdf44.fd211",
+        "type": "mqtt out",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Pompa Siram Sedikit",
+        "topic": "control/pompa1",
+        "qos": "1",
+        "retain": "true",
+        "broker": "98805563.af0c68",
+        "x": 1120,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9a406301.aae27",
+        "type": "mqtt out",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Pompa Siram Normal",
+        "topic": "control/pompa2",
+        "qos": "1",
+        "retain": "true",
+        "broker": "98805563.af0c68",
+        "x": 1120,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "abda7bf3.c202c8",
+        "type": "mqtt out",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Pompa Siram Banyak",
+        "topic": "control/pompa3",
+        "qos": "1",
+        "retain": "true",
+        "broker": "98805563.af0c68",
+        "x": 1120,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "34bed5d6.2b166a",
+        "type": "link in",
+        "z": "5cdc6e62.a5eaa",
+        "name": "",
+        "links": [
+            "d39d1935.0a6078"
+        ],
+        "x": 215,
+        "y": 820,
+        "wires": [
+            [
+                "237817bc.a4c9a8"
+            ]
+        ]
+    },
+    {
+        "id": "fb10ca6d.27f018",
+        "type": "link in",
+        "z": "5cdc6e62.a5eaa",
+        "name": "",
+        "links": [
+            "d39d1935.0a6078"
+        ],
+        "x": 195,
+        "y": 160,
+        "wires": [
+            [
+                "fb28cd60.7b697"
+            ]
+        ]
+    },
+    {
+        "id": "ca5d017e.dc61",
+        "type": "link in",
+        "z": "5cdc6e62.a5eaa",
+        "name": "",
+        "links": [
+            "d39d1935.0a6078"
+        ],
+        "x": 35,
+        "y": 340,
+        "wires": [
+            [
+                "6af5080.0f725f8"
+            ]
+        ]
+    },
+    {
+        "id": "292ee787.0ac788",
+        "type": "link out",
+        "z": "6883f729.e60368",
+        "name": "Pompa",
+        "links": [
+            "f964c044.5b4f"
+        ],
+        "x": 935,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "f964c044.5b4f",
+        "type": "link in",
+        "z": "6883f729.e60368",
+        "name": "",
+        "links": [
+            "292ee787.0ac788"
+        ],
+        "x": 135,
+        "y": 180,
+        "wires": [
+            [
+                "33cc2cb8.78f294"
+            ]
+        ]
+    },
+    {
+        "id": "50453b88.587e24",
+        "type": "ui_chart",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Kelembapan Tanah Line Chart",
+        "group": "a880ee2c.494dc",
+        "order": 1,
+        "width": "7",
+        "height": "5",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Loading Data",
+        "dot": false,
+        "ymin": "150",
+        "ymax": "1023",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#b35a1e",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 430,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "918136b0.1cccd8",
+        "type": "ui_toast",
+        "z": "6883f729.e60368",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "Notification Flush",
+        "x": 490,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "4111f240.7be2bc",
+        "type": "function",
+        "z": "6883f729.e60368",
+        "name": "Output",
+        "func": "var obj = msg.payload;\nvar topik = \"Penyiraman\";\nvar payload = \"\";\n\nif(obj == 100){\n    payload = \"Pompa Dihidupkan\";\n} else {\n    payload = \"Pompa Dimatikan\";\n}\n\nreturn {topic: topik, payload: payload};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 290,
+        "y": 380,
+        "wires": [
+            [
+                "918136b0.1cccd8",
+                "3f03fddf.e79e22"
+            ]
+        ]
+    },
+    {
+        "id": "3f03fddf.e79e22",
+        "type": "ui_audio",
+        "z": "6883f729.e60368",
+        "name": "Voice",
+        "group": "8a5e5f45.6ecef",
+        "voice": "id-ID",
+        "always": "",
+        "x": 450,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a4058a9d.0a3528",
+        "type": "ui_text",
+        "z": "5cdc6e62.a5eaa",
+        "group": "cdd28492.d34c78",
+        "order": 4,
+        "width": "7",
+        "height": "1",
+        "name": "Waktu 1",
+        "label": "Waktu Penyiraman 1 :",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "x": 360,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "ccee6c82.91519",
+        "type": "ui_text",
+        "z": "5cdc6e62.a5eaa",
+        "group": "cdd28492.d34c78",
+        "order": 5,
+        "width": "7",
+        "height": "1",
+        "name": "Waktu 2",
+        "label": "Waktu Penyiraman 2 :",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "x": 360,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b3d58105.8513b",
+        "type": "inject",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Interface Waktu 1",
+        "topic": "",
+        "payload": "06.00 AM",
+        "payloadType": "str",
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 40,
+        "wires": [
+            [
+                "a4058a9d.0a3528"
+            ]
+        ]
+    },
+    {
+        "id": "f3cf8a5c.4b0ab8",
+        "type": "inject",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Interface Waktu 2",
+        "topic": "",
+        "payload": "05.00 PM",
+        "payloadType": "str",
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "ccee6c82.91519"
+            ]
+        ]
+    },
+    {
+        "id": "52a9ada7.99e644",
+        "type": "ui_text",
+        "z": "5cdc6e62.a5eaa",
+        "group": "cdd28492.d34c78",
+        "order": 1,
+        "width": "7",
+        "height": "2",
+        "name": "Waktu Nyata",
+        "label": "Time",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 610,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "685e307c.20aa1",
+        "type": "inject",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Waktu",
+        "topic": "timestamp",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "x": 160,
+        "y": 220,
+        "wires": [
+            [
+                "d82ef193.13214"
+            ]
+        ]
+    },
+    {
+        "id": "d82ef193.13214",
+        "type": "function",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Waktu Lokal Indonesia",
+        "func": "var d = new Date();\nvar t = d.toLocaleTimeString('id-id');\nreturn {payload: t};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 400,
+        "y": 220,
+        "wires": [
+            [
+                "52a9ada7.99e644"
+            ]
+        ]
+    },
+    {
+        "id": "e4f1c8d9.4452c8",
+        "type": "ui_chart",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Suhu Line Chart",
+        "group": "943f9b1b.2021c8",
+        "order": 1,
+        "width": "7",
+        "height": "5",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Loading Data",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 380,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e2d26d36.f88f4",
+        "type": "function",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Fuzzy Logic",
+        "func": "//Variabel Input\nvar obj = msg.payload;\nvar temp = parseInt(obj.s1);\nvar soilMoisture = parseInt(obj.kt1);\n\n//Variabel Batas Suhu\nconst T_temp_1 = 25.00;\nconst T_temp_2 = 30.00;\nconst T_temp_3 = 35.00;\nconst T_temp_4 = 40.00;\n\n//Variabel Batas Kelembapan Tanah\nconst T_soil_1 = 340.00;\nconst T_soil_2 = 440.00;\nconst T_soil_3 = 475.00;\nconst T_soil_4 = 575.00;\n\n//Variabel Output Penyiraman\nconst TidakSiram = 0.00;\nconst Sedikit = 0.3333;\nconst Normal = 0.6667;\nconst Banyak = 1.0;\n\n//Variabel Rules\nvar rule00 = 0.00;\nvar rule01 = 0.00;\nvar rule02 = 0.00;\n\nvar rule10 = 0.00;\nvar rule11 = 0.00;\nvar rule12 = 0.00;\n\nvar rule20 = 0.00;\nvar rule21 = 0.00;\nvar rule22 = 0.00;\n\n//variabel fuzzy\nvar miu_temp = [0.00, 0.00, 0.00];\nvar miu_soil = [0.00, 0.00, 0.00];\nvar rule = [\n    [0.00,0.00,0.00], \n    [0.00,0.00,0.00], \n    [0.00,0.00,0.00]\n    ];\n    \nvar min_miu = 0.00;\nvar rulescore = 0.00;\nvar defuzscore = 0.00;\nvar finalscore = 0.00;\n\n//=============================================================\n\n//Fuzzyfikasi Suhu\n//Dingin\nif(temp <= T_temp_1){\n    miu_temp[0] = 1;\n} else if(temp > T_temp_1 && temp <= T_temp_2){\n    miu_temp[0] = (T_temp_2 - temp) / (T_temp_2 - T_temp_1);\n} else {\n    miu_temp[0] = 0;\n}\n\n//Normal\nif(temp <= T_temp_1){\n    miu_temp[1] = 0;\n} else if(temp > T_temp_1 && temp < T_temp_2){\n    miu_temp[1] = (temp - T_temp_1) / (T_temp_2 - T_temp_1);\n} else if(temp >= T_temp_2 && temp <= T_temp_3){\n    miu_temp[1] = 1;\n} else if(temp > T_temp_3 && temp <= T_temp_4){\n    miu_temp[1] = (T_temp_4 - temp) / (T_temp_4 - T_temp_3);\n} else {\n    miu_temp[1] = 0;\n}\n\n//Panas\nif(temp <= T_temp_3){\n    miu_temp[2] = 0;\n} else if(temp > T_temp_3 && temp <= T_temp_4){\n    miu_temp[2] = (temp - T_temp_3) / (T_temp_4 - T_temp_3);\n} else {\n    miu_temp[2] = 1;\n}\n\n//=============================================================\n\n//Fuzzyfikasi Kelembapan Tanah\n//Basah\nif(soilMoisture <= T_soil_1){\n    miu_soil[0] = 1;\n} else if(soilMoisture > T_soil_1 && soilMoisture <= T_soil_2){\n    miu_soil[0] = (T_soil_2 - soilMoisture) / (T_soil_2 - T_soil_1);\n} else {\n    miu_soil[0] = 0;\n}\n\n//Lembab\nif(soilMoisture <= T_soil_1){\n    miu_soil[1] = 0;\n} else if(soilMoisture > T_soil_1 && soilMoisture < T_soil_2){\n    miu_soil[1] = (soilMoisture - T_soil_1) / (T_soil_2 - T_soil_1);\n} else if(soilMoisture >= T_soil_2 && soilMoisture <= T_soil_3){\n    miu_soil[1] = 1;\n} else if(soilMoisture > T_soil_3 && soilMoisture <= T_soil_4){\n    miu_soil[1] = (T_soil_4 - soilMoisture) / (T_soil_4 - T_soil_3);\n} else {\n    miu_soil[1] = 0;\n}\n\n//Kering\nif(soilMoisture <= T_soil_3){\n    miu_soil[2] = 0;\n} else if(soilMoisture > T_soil_3 && soilMoisture <= T_soil_4){\n    miu_soil[2] = (soilMoisture - T_soil_3) / (T_soil_4 - T_soil_3);\n} else {\n    miu_soil[2] = 1;\n}\n\n//=============================================================\n\n//Rules\nfor (i = 0; i <= 2; i++) {\n    for (j = 0; j <= 2; j++) {\n      min_miu = Math.min(miu_temp[i], miu_soil[j]);\n      rule[i][j] = min_miu;\n    }\n}\n\nrule00 = rule[0][0];\nrule01 = rule[0][1];\nrule02 = rule[0][2];\n\nrule10 = rule[1][0];\nrule11 = rule[1][1];\nrule12 = rule[1][2];\n\nrule20 = rule[2][0];\nrule21 = rule[2][1];\nrule22 = rule[2][2];\n\n//Defuzifikasi\nrulescore = (rule00 * TidakSiram) + (rule01 * Sedikit) + (rule02 * Normal) +\n(rule10 * TidakSiram) + (rule11 * Normal) + (rule12 * Banyak) +\n(rule20 * Sedikit) + (rule21 * Normal) + (rule22 * Banyak);\n\nfor (i = 0; i <= 2; i++) {\n    for (j = 0; j <= 2; j++) {\n      defuzscore = defuzscore + (rule[i][j]);\n    }\n}\n\nfinalscore = (rulescore) / (defuzscore);\n\nreturn {payload : finalscore, topic : \"fuzzy\"};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 610,
+        "y": 920,
+        "wires": [
+            [
+                "d39d1935.0a6078"
+            ]
+        ]
+    },
+    {
+        "id": "99bba202.dd371",
+        "type": "ui_gauge",
+        "z": "6883f729.e60368",
+        "name": "Statement",
+        "group": "2f39b818.2a2d78",
+        "order": 1,
+        "width": "7",
+        "height": "6",
+        "gtype": "wave",
+        "title": "",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 470,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "76113c10.623c94",
+        "type": "function",
+        "z": "6883f729.e60368",
+        "name": "Nilai Fuzzy",
+        "func": "var obj = msg.payload;\nvar stat = 0;\n\nif(obj === false){\n    stat = 0;\n} else {\n    stat = 100;\n}\n\nreturn {payload : stat};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 270,
+        "y": 280,
+        "wires": [
+            [
+                "99bba202.dd371"
+            ]
+        ]
+    },
+    {
+        "id": "bc37e0a7.7ddae",
+        "type": "ui_text",
+        "z": "6883f729.e60368",
+        "group": "2f39b818.2a2d78",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Status Fuzzy",
+        "label": "Status : ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "x": 470,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5a690f21.45045",
+        "type": "function",
+        "z": "6883f729.e60368",
+        "name": "Status Fuzzy",
+        "func": "var obj = msg.payload;\nvar stat = \"Aktif\";\n\nif(obj === false){\n    stat = \"Tidak Aktif\";\n} else {\n    stat = \"Aktif\";\n}\n\nreturn {payload : stat, topic : \"Status Pompa\"};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 270,
+        "y": 240,
+        "wires": [
+            [
+                "bc37e0a7.7ddae"
+            ]
+        ]
+    },
+    {
+        "id": "35037422.e470dc",
+        "type": "function",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Pengatur Waktu",
+        "func": "var data = msg.payload;\nvar d = new Date();\nvar h = d.getHours();\nvar m = d.getMinutes();\nvar s = d.getSeconds();\n\nvar time;\nif(h > 9){\n    if(m > 9){\n        if(s > 9){\n            time = \"0\"+h+\":0\"+m+\":0\"+s;\n        } else {\n            time = \"0\"+h+\":0\"+m+\":\"+s;\n        }\n    } else {\n        if(s > 9){\n            time = \"0\"+h+\":\"+m+\":0\"+s;\n        } else {\n            time = \"0\"+h+\":\"+m+\":\"+s;\n        }\n    }\n} else {\n    if(m > 9){\n        if(s > 9){\n            time = h+\":0\"+m+\":0\"+s;\n        } else {\n            time = h+\":0\"+m+\":\"+s;\n        }\n    } else {\n        if(s > 9){\n            time = h+\":\"+m+\":0\"+s;\n        } else {\n            time = h+\":\"+m+\":\"+s;\n        }\n    }\n}\n\nvar value;\n\nif(time == \"13:19\"){\n    value = true;\n} else if(time == \"17:00\"){\n    value = true;\n} else {\n    value = false;\n}\n\nreturn {payload:value};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900,
+        "y": 280,
+        "wires": [
+            [
+                "c82cdf44.fd211"
+            ]
+        ]
+    },
+    {
+        "id": "ba50c16a.89dbf",
+        "type": "function",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Pengatur Waktu",
+        "func": "var data = msg.payload;\nvar d = new Date();\nvar h = d.getHours();\nvar m = d.getMinutes();\nvar s = d.getSeconds();\n\nvar time;\nif(h > 9){\n    if(m > 9){\n        if(s > 9){\n            time = \"0\"+h+\":0\"+m+\":0\"+s;\n        } else {\n            time = \"0\"+h+\":0\"+m+\":\"+s;\n        }\n    } else {\n        if(s > 9){\n            time = \"0\"+h+\":\"+m+\":0\"+s;\n        } else {\n            time = \"0\"+h+\":\"+m+\":\"+s;\n        }\n    }\n} else {\n    if(m > 9){\n        if(s > 9){\n            time = h+\":0\"+m+\":0\"+s;\n        } else {\n            time = h+\":0\"+m+\":\"+s;\n        }\n    } else {\n        if(s > 9){\n            time = h+\":\"+m+\":0\"+s;\n        } else {\n            time = h+\":\"+m+\":\"+s;\n        }\n    }\n}\n\nvar value;\n\nif(time == \"13:19\"){\n    value = true;\n} else if(time == \"17:00\"){\n    value = true;\n} else {\n    value = false;\n}\n\nreturn {payload:value};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900,
+        "y": 340,
+        "wires": [
+            [
+                "9a406301.aae27"
+            ]
+        ]
+    },
+    {
+        "id": "9d2c53ad.1f7ce",
+        "type": "function",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Pengatur Waktu",
+        "func": "var data = msg.payload;\nvar d = new Date();\nvar h = d.getHours();\nvar m = d.getMinutes();\nvar s = d.getSeconds();\n\nvar time;\nif(h > 9){\n    if(m > 9){\n        if(s > 9){\n            time = \"0\"+h+\":0\"+m+\":0\"+s;\n        } else {\n            time = \"0\"+h+\":0\"+m+\":\"+s;\n        }\n    } else {\n        if(s > 9){\n            time = \"0\"+h+\":\"+m+\":0\"+s;\n        } else {\n            time = \"0\"+h+\":\"+m+\":\"+s;\n        }\n    }\n} else {\n    if(m > 9){\n        if(s > 9){\n            time = h+\":0\"+m+\":0\"+s;\n        } else {\n            time = h+\":0\"+m+\":\"+s;\n        }\n    } else {\n        if(s > 9){\n            time = h+\":\"+m+\":0\"+s;\n        } else {\n            time = h+\":\"+m+\":\"+s;\n        }\n    }\n}\n\nvar value;\n\nif(time == \"13:25\"){\n    value = true;\n} else if(time == \"17:00\"){\n    value = true;\n} else {\n    value = false;\n}\n\nreturn {topic: d, payload:value};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900,
+        "y": 400,
+        "wires": [
+            [
+                "abda7bf3.c202c8"
+            ]
+        ]
+    },
+    {
+        "id": "c8b9d040.a8c54",
+        "type": "comment",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Konfigurasi Interface Waktu Penyiraman",
+        "info": "Interface jadwal waktu dapat diubah pada Node \"Interface Waktu 1\" atau \"Interface Waktu 2\"\nPilih \"Interface Waktu 1\" atau \"Interface Waktu 1\", kemudian ganti nilai sesuai dengan nilai yang diinginkan\nNode Inject akan meneruskan msg.payload ke Node Teks \"Waktu 1\" atau \"Waktu 2\"",
+        "x": 630,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "e20b067.cc47cf8",
+        "type": "comment",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Prosedur Penyiraman Otomatis",
+        "info": "Atur penyiraman otomatis\nNode Link In \"Nilai Fuzzy\", \"On Manual\" dan \"Off Manual\" digabungkan dengan Node Join \"Join\"\nData dari Node Join \"Join\" akan diubah menjadi JSON javascript dengan Node JSON \"Json\"\nPada Node Function \"On/Off Manual\", jika nilai dari Link In \"On Manual\" adalah true maka akan melanjutkan nilai fuzzy dari Node Link In \"Nilai Fuzzy\", dan jika nilai dari Link In \"Off Manual\" adalah true maka nilai fuzzy akan diubah menjadi undefined\nJika masukkan nilai selain undefined, maka akan masuk pada Node Function \"Pengatur Waktu\" yang akan memberikan nilai true jika waktu penyiraman sama dengan waktu saat ini, dan memberikan nilai false jika waktu penyiraman tidak sama dengan waktu saat ini\nNode Function \"Pengaturan Waktu\" akan mengirimkan pesan ke Mqtt Out \"Pompa Siram Sedikit\" atau Mqtt Out \"Pompa Siram Normal\" atau Mqtt Out \"Pompa Siram Banyak\"",
+        "x": 250,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9692c449.b81cd8",
+        "type": "link out",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Suhu",
+        "links": [
+            "800139a1.cbda88",
+            "1327b5de.05269a"
+        ],
+        "x": 315,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "800139a1.cbda88",
+        "type": "link in",
+        "z": "5cdc6e62.a5eaa",
+        "name": "",
+        "links": [
+            "9692c449.b81cd8"
+        ],
+        "x": 215,
+        "y": 900,
+        "wires": [
+            [
+                "8c933801.f75f18"
+            ]
+        ]
+    },
+    {
+        "id": "1327b5de.05269a",
+        "type": "link in",
+        "z": "5cdc6e62.a5eaa",
+        "name": "",
+        "links": [
+            "9692c449.b81cd8"
+        ],
+        "x": 215,
+        "y": 740,
+        "wires": [
+            [
+                "237817bc.a4c9a8"
+            ]
+        ]
+    },
+    {
+        "id": "8d625fa8.139ab",
+        "type": "link out",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Kelembapan Tanah",
+        "links": [
+            "56ffc5a9.57fc4c",
+            "7dab33b2.d3adcc"
+        ],
+        "x": 315,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "56ffc5a9.57fc4c",
+        "type": "link in",
+        "z": "5cdc6e62.a5eaa",
+        "name": "",
+        "links": [
+            "8d625fa8.139ab"
+        ],
+        "x": 215,
+        "y": 780,
+        "wires": [
+            [
+                "237817bc.a4c9a8"
+            ]
+        ]
+    },
+    {
+        "id": "7dab33b2.d3adcc",
+        "type": "link in",
+        "z": "5cdc6e62.a5eaa",
+        "name": "",
+        "links": [
+            "8d625fa8.139ab"
+        ],
+        "x": 215,
+        "y": 940,
+        "wires": [
+            [
+                "8c933801.f75f18"
+            ]
+        ]
+    },
+    {
+        "id": "699b5ef1.74237",
+        "type": "function",
+        "z": "6883f729.e60368",
+        "name": "On Manual",
+        "func": "var manual = true;\n\nreturn {topic: \"manual\", payload: manual};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 630,
+        "y": 140,
+        "wires": [
+            [
+                "878b0a8f.53d6c8"
+            ]
+        ]
+    },
+    {
+        "id": "4327c555.4b230c",
+        "type": "function",
+        "z": "6883f729.e60368",
+        "name": "Off Manual",
+        "func": "var manual = false;\n\nreturn {topic: \"manual\", payload: manual};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 630,
+        "y": 20,
+        "wires": [
+            [
+                "5f20c1e1.86a2"
+            ]
+        ]
+    },
+    {
+        "id": "5f20c1e1.86a2",
+        "type": "link out",
+        "z": "6883f729.e60368",
+        "name": "Off Manual",
+        "links": [
+            "e1ad87a7.573e58",
+            "ad91b8d1.c883b8",
+            "e0515ae.0d3b9a8",
+            "9205a663.d43978"
+        ],
+        "x": 775,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "878b0a8f.53d6c8",
+        "type": "link out",
+        "z": "6883f729.e60368",
+        "name": "On Manual",
+        "links": [
+            "67324003.9f0e4",
+            "18279821.d321f8",
+            "92a30fdc.ac2e6",
+            "9e12a8bf.37be48"
+        ],
+        "x": 775,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "18279821.d321f8",
+        "type": "link in",
+        "z": "5cdc6e62.a5eaa",
+        "name": "",
+        "links": [
+            "878b0a8f.53d6c8"
+        ],
+        "x": 35,
+        "y": 280,
+        "wires": [
+            [
+                "6af5080.0f725f8"
+            ]
+        ]
+    },
+    {
+        "id": "ad91b8d1.c883b8",
+        "type": "link in",
+        "z": "5cdc6e62.a5eaa",
+        "name": "",
+        "links": [
+            "5f20c1e1.86a2"
+        ],
+        "x": 35,
+        "y": 400,
+        "wires": [
+            [
+                "6af5080.0f725f8"
+            ]
+        ]
+    },
+    {
+        "id": "f27f2a.6a6b10d8",
+        "type": "function",
+        "z": "5cdc6e62.a5eaa",
+        "name": "On/Off Function",
+        "func": "var obj = msg.payload;\nvar time;\nvar manual = obj.manual;\n\nif(manual===true){\n    time = obj.fuzzy;\n} else {\n    time = \"undefined\";\n}\nreturn {payload: time};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 520,
+        "y": 340,
+        "wires": [
+            [
+                "84cc994f.7dd3f8"
+            ]
+        ]
+    },
+    {
+        "id": "6af5080.0f725f8",
+        "type": "join",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Join",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 170,
+        "y": 340,
+        "wires": [
+            [
+                "1dee6638.48a62a"
+            ]
+        ]
+    },
+    {
+        "id": "1dee6638.48a62a",
+        "type": "json",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Json",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 350,
+        "y": 340,
+        "wires": [
+            [
+                "f27f2a.6a6b10d8"
+            ]
+        ]
+    },
+    {
+        "id": "9e12a8bf.37be48",
+        "type": "link in",
+        "z": "6883f729.e60368",
+        "name": "",
+        "links": [
+            "878b0a8f.53d6c8"
+        ],
+        "x": 135,
+        "y": 240,
+        "wires": [
+            [
+                "5a690f21.45045",
+                "76113c10.623c94"
+            ]
+        ]
+    },
+    {
+        "id": "9205a663.d43978",
+        "type": "link in",
+        "z": "6883f729.e60368",
+        "name": "",
+        "links": [
+            "5f20c1e1.86a2"
+        ],
+        "x": 135,
+        "y": 280,
+        "wires": [
+            [
+                "5a690f21.45045",
+                "76113c10.623c94"
+            ]
+        ]
+    },
+    {
+        "id": "a9dd41e4.ea83c",
+        "type": "comment",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Proses Fuzzy Logic Sugeno",
+        "info": "Node Link In \"Suhu\" dan Node Link In \"Kelembapan Tanah\" digabungkan dengan Node Join \"Join\"\nData dari Node Join \"Join\" di ubah menjadi data JSON javascript dengan Node Json \"JSON\"\nData json akan di olah pada Node Function \"Fuzzy Logic\"\nData hasil fuzzy logic di kirimkan dengan Link Out \"Nilai Fuzzy\"",
+        "x": 900,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "b41aef33.3f5a7",
+        "type": "comment",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Pengiriman Data Menuju Firebase",
+        "info": "Node Link In \"Suhu\", Node Link In \"Kelembapan Tanah\", Node Link In \"Timestamp\" dan Link In \"Nilai Fuzzy\" digabungkan dengan Node Join \"Join\"\nData dari Node Join \"Join\" di ubah menjadi data JSON javascript dengan Node Json \"JSON\"\nData json dikirimkan ke basis data realtime database yang berada pada Firebase dengan Node Firebase Modify \"Firebase\"",
+        "x": 920,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "8237f7d4.f87de8",
+        "type": "comment",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Menampilkan Visualisasi Suhu",
+        "info": "Data suhu berasal dari Node MQTT In \"DHT Input\" dengan topic s1\nData tersebut menuju Node Line Chart \"Suhu Line Chart\" untuk menampilkan Line Chart suhu\nData tersebut juga menuju Node Teks \"Suhu\" untuk menampilkan Teks suhu yang berada di bawah line chart suhu\nData suhu akan di masukkan ke Node Link Out \"Suhu\"",
+        "x": 720,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "3e461de8.32e9f2",
+        "type": "comment",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Menampilkan Visualisasi Kelembapan Tanah",
+        "info": "Data suhu berasal dari Node MQTT In \"SoilMoisture Input\" dengan topic kt1\nData tersebut menuju Node Line Chart \"Kelembapan Line Chart\" untuk menampilkan Line Chart suhu\nData tersebut juga menuju Node Teks \"Kelembapan Tanah\" untuk menampilkan Teks kelembapan tanah yang berada di bawah line chart kelembapan tanah\nData suhu akan di masukkan ke Node Link Out \"Kelembapan Tanah\"",
+        "x": 770,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "355580db.1b182",
+        "type": "comment",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Konfigurasi INterface Nilai Fuzzy Logic",
+        "info": "Interface nilai fuzzy memiliki masukkan dari msg.payload yang berasal dari Node Link In \"Nilai Fuzzy\"\nNode Link In berasal dari Node Link Out \"Nilai Fuzzy\"",
+        "x": 630,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6c7bd4a7.31847c",
+        "type": "comment",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Konfigurasi Interface Jam",
+        "info": "Interface jam dari fungsi toLocaleTimeString('id-id') yang berada pada Node Function \"Waktu Lokal Indonesia\"\nNode Inject \"Waktu\" berfungsi sebagai trigger untuk mengaktifkan Node Function \"Waktu Lokal Indonesia\"",
+        "x": 830,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "453ce66d.9876a8",
+        "type": "comment",
+        "z": "6883f729.e60368",
+        "name": "Konfigurasi Mode Manual",
+        "info": "Node Inject \"On Switch\" berfungsi membuat Node Switch \"Manual\" berada pada nilai Off\nNode Switch \"Manual\" jika on akan memberikan nilai true dan jika off maka memberikan nilai false\nPada Node Change \"Mode\" terdapat 2 nilai output yaitu true dan false\nJika nilai true maka akan menjalankan Node Function \"Off Manual\" dan Node Function \"On Pompa\"\nJika nilai false maka akan menjalankan Node Function \"On Manual\" dan Node Function \"Off Pompa\"\nPada Node Function \"Off Manual\" dikirimkan pada Link Out \"Off Manual\" dan Node Function \"On Manual\" dikirimkan pada Link Out \"On Manual\"\nPada Node Function \"On Pompa\" dan Node Function \"Off Pompa\" akan menghidupkan Node Switch \"Pompa\" dengan nilai off\nNode Switch \"Pompa\" akan dikirimkan dengan Node Link out \"Pompa\"",
+        "x": 330,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "e7700c3.25170f",
+        "type": "comment",
+        "z": "6883f729.e60368",
+        "name": "Pengiriman MQTT Mode Manual",
+        "info": "",
+        "x": 530,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "68e0095a.07f058",
+        "type": "comment",
+        "z": "6883f729.e60368",
+        "name": "Konfigurasi Interface Pompa Dan Fuzzy Logic",
+        "info": "Pada Link In \"On Manual\" dan Link In \"Off Manual\" akan dikirimkan data pada Node Function \"Status Fuzzy\" dan Node Function \"Nilai Fuzzy\"\nPada Node Function \"Status Fuzzy\" berfungsi menampilkan keadaan status fuzzy logic pada Node Teks \"Status Fuzzy\", terdapat dua nilai pada status fuzzy yaitu aktif dan tidak aktif\nPada Node Function \"Nilai Fuzzy\" berfungsi menampilkan keadaan fuzzy logic pada Node Gauge \"Statement\", terdapat dua nilai pada nilai fuzzy yaitu 0 jika tidak aktif dan 100 jika aktif",
+        "x": 790,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b2a2d882.7d89d8",
+        "type": "comment",
+        "z": "6883f729.e60368",
+        "name": "Kontrol Status Pompa",
+        "info": "Node Mqtt In \"Status Pompa\" mengirimkan pada Node Function \"Nilai Pompa\" dan Node Function \"Status Pompa\"\nNode Function \"Nilai Pompa\" mengirimkan pada Node Gauge \"Nilai Pompa\"",
+        "x": 720,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "ee6742cc.017a5",
+        "type": "comment",
+        "z": "6883f729.e60368",
+        "name": "Pengiriman Data Controling Menuju Firebase",
+        "info": "Data Node Function \"Status Pompa\" dan Node Switch \"Time Format\" akan digabungkan pada Node Join \"Join\"\nNode Join \"Join\" akan mengirimkan data ke Node Json \"JSON\"\nNode Json \"JSON\" akan mengubah data menjadi Json javascript dan mengirimkan ke Node Firebase Modify \"Firebase\"",
+        "x": 930,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "d8027daf.d42fc",
+        "type": "comment",
+        "z": "6883f729.e60368",
+        "name": "Kontrol Notifikasi Dan Voice",
+        "info": "Mqtt In \"Status Pompa\" mengirimkan data ke Node Function \"Output\"\nNode Function \"Output\" akan mengirimkan data pada Node Notifikasi \"Notification Flush\" dan Node Voice \"Voice\"\nPada Node Notifikasi \"Notification Flush\" akan membaca msg.topic sebagai header pesan dan msg.payload sebagai isi pesan\nPada Node Voice \"Voice\" akan membaca msg.payload sebagai pesan suara",
+        "x": 740,
+        "y": 360,
+        "wires": []
+    }
+]
