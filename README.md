@@ -7,6 +7,7 @@
 
     - https://github.com/node-red/node-red
 - Jalankan Node-RED
+    ```- npm start```
     - Install Node node-red-contrib-firebase *v1.1.1*
     - Install Node node-red-dashboard *v2.21.0*
 - Import **flows.json** pada Node-RED dengan cara :
