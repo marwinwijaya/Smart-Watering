@@ -1,5 +1,5 @@
 # Smart-Watering
-https://img.shields.io/github/issues/marwinwijaya/Smart-Watering
+![alt text](https://img.shields.io/github/issues/marwinwijaya/Smart-Watering)
 
  Tugas Akhir - Muhamad Arwin Wijaya Teknik Informatika 2016
 
