@@ -6,6 +6,13 @@
 
  Penyiraman Otomatis berbasis IoT dengan arsitektur MQTT dan Logika Fuzzy Logic Sugeno
 
+ Alat yang dibutuhkan :
+ 1. ESP32s
+ 2. DHT11
+ 3. Soil Moisture YL-69
+ 4. Relay 2 Pin
+
+Prosedur Install :
  - Install NodeJS
     - https://nodejs.org/en/download/
 
