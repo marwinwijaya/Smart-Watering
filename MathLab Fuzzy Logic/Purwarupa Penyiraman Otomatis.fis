@@ -1,0 +1,48 @@
+[System]
+Name='Purwarupa Penyiraman Otomatis'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=9
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='Suhu'
+Range=[10 50]
+NumMFs=3
+MF1='Dingin':'trapmf',[10 10 25 30]
+MF2='Normal':'trapmf',[25 30 35 40]
+MF3='Panas':'trapmf',[35 40 50 50]
+
+[Input2]
+Name='Kelembapan'
+Range=[150 1023]
+NumMFs=3
+MF1='Basah':'trapmf',[150 150 340 440]
+MF2='Lembab':'trapmf',[340 440 475 575]
+MF3='Kering':'trapmf',[475 575 1023 1023]
+
+[Output1]
+Name='output1'
+Range=[0 1]
+NumMFs=4
+MF1='TidakSiram':'constant',[0]
+MF2='SiramSedikit':'constant',[0.33]
+MF3='SiramNormal':'constant',[0.67]
+MF4='SiramBanyak':'constant',[1]
+
+[Rules]
+1 1, 1 (1) : 1
+1 2, 2 (1) : 1
+1 3, 3 (1) : 1
+2 1, 1 (1) : 1
+2 2, 3 (1) : 1
+2 3, 4 (1) : 1
+3 1, 2 (1) : 1
+3 2, 3 (1) : 1
+3 3, 4 (1) : 1
