@@ -654,7 +654,9 @@
         "x": 530,
         "y": 780,
         "wires": [
-            []
+            [
+                "a70645b4.a8e6c8"
+            ]
         ]
     },
     {
@@ -673,34 +675,7 @@
         "y": 860,
         "wires": [
             [
-                "bae158a5.cc4888"
-            ]
-        ]
-    },
-    {
-        "id": "bae158a5.cc4888",
-        "type": "change",
-        "z": "5cdc6e62.a5eaa",
-        "name": "Date Time Format",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "$now()",
-                "tot": "jsonata"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 410,
-        "y": 860,
-        "wires": [
-            [
-                "237817bc.a4c9a8"
+                "26653ab0.04dd86"
             ]
         ]
     },
@@ -806,7 +781,9 @@
         "x": 510,
         "y": 500,
         "wires": [
-            []
+            [
+                "5addd875.5e4ab8"
+            ]
         ]
     },
     {
@@ -895,10 +872,10 @@
                 "35037422.e470dc"
             ],
             [
-                "ba50c16a.89dbf"
+                "a499b5ef.214af8"
             ],
             [
-                "9d2c53ad.1f7ce"
+                "f89fef82.87abc"
             ],
             []
         ],
@@ -1377,7 +1354,7 @@
         "type": "function",
         "z": "5cdc6e62.a5eaa",
         "name": "Pengatur Waktu",
-        "func": "var data = msg.payload;\nvar d = new Date();\nvar h = d.getHours();\nvar m = d.getMinutes();\nvar s = d.getSeconds();\n\nvar time;\nif(h > 9){\n    if(m > 9){\n        if(s > 9){\n            time = \"0\"+h+\":0\"+m+\":0\"+s;\n        } else {\n            time = \"0\"+h+\":0\"+m+\":\"+s;\n        }\n    } else {\n        if(s > 9){\n            time = \"0\"+h+\":\"+m+\":0\"+s;\n        } else {\n            time = \"0\"+h+\":\"+m+\":\"+s;\n        }\n    }\n} else {\n    if(m > 9){\n        if(s > 9){\n            time = h+\":0\"+m+\":0\"+s;\n        } else {\n            time = h+\":0\"+m+\":\"+s;\n        }\n    } else {\n        if(s > 9){\n            time = h+\":\"+m+\":0\"+s;\n        } else {\n            time = h+\":\"+m+\":\"+s;\n        }\n    }\n}\n\nvar value;\n\nif(time == \"13:19\"){\n    value = true;\n} else if(time == \"17:00\"){\n    value = true;\n} else {\n    value = false;\n}\n\nreturn {payload:value};",
+        "func": "var data = msg.payload;\nvar d = new Date();\nvar h = d.getHours();\nvar m = d.getMinutes();\nvar s = d.getSeconds();\n\nvar time;\nif(h <= 9){\n    if(m <= 9){\n        time = \"0\"+h+\":0\"+m;\n    } else if(m > 9){\n        time = \"0\"+h+\":\"+m;\n    }\n} else if(h > 9){\n    if(m <= 9){\n        time = h+\":0\"+m;\n    } else if(m > 9){\n        time = h+\":\"+m;\n    }\n}\n\nvar value;\n\nif(time == \"06:00\"){\n    value = true;\n} else if(time == \"17:00\"){\n    value = true;\n} else {\n    value = false;\n}\n\n\nreturn {payload:value};",
         "outputs": 1,
         "noerr": 0,
         "x": 900,
@@ -1385,38 +1362,6 @@
         "wires": [
             [
                 "c82cdf44.fd211"
-            ]
-        ]
-    },
-    {
-        "id": "ba50c16a.89dbf",
-        "type": "function",
-        "z": "5cdc6e62.a5eaa",
-        "name": "Pengatur Waktu",
-        "func": "var data = msg.payload;\nvar d = new Date();\nvar h = d.getHours();\nvar m = d.getMinutes();\nvar s = d.getSeconds();\n\nvar time;\nif(h > 9){\n    if(m > 9){\n        if(s > 9){\n            time = \"0\"+h+\":0\"+m+\":0\"+s;\n        } else {\n            time = \"0\"+h+\":0\"+m+\":\"+s;\n        }\n    } else {\n        if(s > 9){\n            time = \"0\"+h+\":\"+m+\":0\"+s;\n        } else {\n            time = \"0\"+h+\":\"+m+\":\"+s;\n        }\n    }\n} else {\n    if(m > 9){\n        if(s > 9){\n            time = h+\":0\"+m+\":0\"+s;\n        } else {\n            time = h+\":0\"+m+\":\"+s;\n        }\n    } else {\n        if(s > 9){\n            time = h+\":\"+m+\":0\"+s;\n        } else {\n            time = h+\":\"+m+\":\"+s;\n        }\n    }\n}\n\nvar value;\n\nif(time == \"13:19\"){\n    value = true;\n} else if(time == \"17:00\"){\n    value = true;\n} else {\n    value = false;\n}\n\nreturn {payload:value};",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 900,
-        "y": 340,
-        "wires": [
-            [
-                "9a406301.aae27"
-            ]
-        ]
-    },
-    {
-        "id": "9d2c53ad.1f7ce",
-        "type": "function",
-        "z": "5cdc6e62.a5eaa",
-        "name": "Pengatur Waktu",
-        "func": "var data = msg.payload;\nvar d = new Date();\nvar h = d.getHours();\nvar m = d.getMinutes();\nvar s = d.getSeconds();\n\nvar time;\nif(h > 9){\n    if(m > 9){\n        if(s > 9){\n            time = \"0\"+h+\":0\"+m+\":0\"+s;\n        } else {\n            time = \"0\"+h+\":0\"+m+\":\"+s;\n        }\n    } else {\n        if(s > 9){\n            time = \"0\"+h+\":\"+m+\":0\"+s;\n        } else {\n            time = \"0\"+h+\":\"+m+\":\"+s;\n        }\n    }\n} else {\n    if(m > 9){\n        if(s > 9){\n            time = h+\":0\"+m+\":0\"+s;\n        } else {\n            time = h+\":0\"+m+\":\"+s;\n        }\n    } else {\n        if(s > 9){\n            time = h+\":\"+m+\":0\"+s;\n        } else {\n            time = h+\":\"+m+\":\"+s;\n        }\n    }\n}\n\nvar value;\n\nif(time == \"13:25\"){\n    value = true;\n} else if(time == \"17:00\"){\n    value = true;\n} else {\n    value = false;\n}\n\nreturn {topic: d, payload:value};",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 900,
-        "y": 400,
-        "wires": [
-            [
-                "abda7bf3.c202c8"
             ]
         ]
     },
@@ -1837,5 +1782,53 @@
         "x": 740,
         "y": 360,
         "wires": []
+    },
+    {
+        "id": "a499b5ef.214af8",
+        "type": "function",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Pengatur Waktu",
+        "func": "var data = msg.payload;\nvar d = new Date();\nvar h = d.getHours();\nvar m = d.getMinutes();\nvar s = d.getSeconds();\n\nvar time;\nif(h <= 9){\n    if(m <= 9){\n        time = \"0\"+h+\":0\"+m;\n    } else if(m > 9){\n        time = \"0\"+h+\":\"+m;\n    }\n} else if(h > 9){\n    if(m <= 9){\n        time = h+\":0\"+m;\n    } else if(m > 9){\n        time = h+\":\"+m;\n    }\n}\n\nvar value;\n\nif(time == \"06:00\"){\n    value = true;\n} else if(time == \"17:00\"){\n    value = true;\n} else {\n    value = false;\n}\n\n\nreturn {payload:value};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900,
+        "y": 340,
+        "wires": [
+            [
+                "9a406301.aae27"
+            ]
+        ]
+    },
+    {
+        "id": "f89fef82.87abc",
+        "type": "function",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Pengatur Waktu",
+        "func": "var data = msg.payload;\nvar d = new Date();\nvar h = d.getHours();\nvar m = d.getMinutes();\nvar s = d.getSeconds();\n\nvar time;\nif(h <= 9){\n    if(m <= 9){\n        time = \"0\"+h+\":0\"+m;\n    } else if(m > 9){\n        time = \"0\"+h+\":\"+m;\n    }\n} else if(h > 9){\n    if(m <= 9){\n        time = h+\":0\"+m;\n    } else if(m > 9){\n        time = h+\":\"+m;\n    }\n}\n\nvar value;\n\nif(time == \"06:00\"){\n    value = true;\n} else if(time == \"17:00\"){\n    value = true;\n} else {\n    value = false;\n}\n\n\nreturn {payload:value};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 900,
+        "y": 400,
+        "wires": [
+            [
+                "abda7bf3.c202c8"
+            ]
+        ]
+    },
+    {
+        "id": "26653ab0.04dd86",
+        "type": "function",
+        "z": "5cdc6e62.a5eaa",
+        "name": "Format Waktu",
+        "func": "var d = new Date();\nvar h = d.getHours();\nvar m = d.getMinutes();\nvar s = d.getSeconds();\n\nvar time;\nif(h <= 9){\n    if(m <= 9){\n        time = \"0\"+h+\":0\"+m;\n    } else if(m > 9){\n        time = \"0\"+h+\":\"+m;\n    }\n} else if(h > 9){\n    if(m <= 9){\n        time = h+\":0\"+m;\n    } else if(m > 9){\n        time = h+\":\"+m;\n    }\n}\n\nreturn {topic:\"timestamp\",payload:time};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 400,
+        "y": 860,
+        "wires": [
+            [
+                "237817bc.a4c9a8"
+            ]
+        ]
     }
 ]
